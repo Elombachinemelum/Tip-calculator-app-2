@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Space Mono', monospace;
+}
+.container{
+    background-color: hsl(185, 41%, 84%);
+    height: auto;
+}
+
+.logo{
+    margin: 6% 0 4rem;
+}
+
+.container .title-div{
+    text-align: center;
+}
+
+.cards{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem 1rem 0 0;
+    padding: 4%;
+}
+
+/* ************************************Inside the input************************************************* */
+
+
+.bill-container .bill-input-div .icon-dollar{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+.bill-container .bill-input-div{
+    position: relative;
+    margin:.5rem 0 1.8rem;
+}
+input{
+    display:block;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'space mono', monospace;
+    background-color: hsl(189, 41%, 97%);
+    border-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    font-size: 16px;
+    text-align: right;
+    position: relative;
+}
+
+input:focus{
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none; /*just like the border, never remove without having set a visible border yet*/
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label{
+    display: inline-block;
+    color:hsl(186, 14%, 43%);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inputs{
+    width: 100%;
+}
+
+/* ******************tips section******************** */
+
+.tip .tip-button-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    margin:.5rem 0 1.8rem;
+}
+
+.tip .tip-button-div div:nth-child(2), .tip .tip-button-div div:nth-child(4), .tip .tip-button-div div:nth-child(6){
+    text-align: left;
+}
+
+.tip-button-div .tipButtons{
+    display: inline-block;
+    margin:0;
+    font-weight: bold;
+    font-family: 'space mono', monospace;
+    /* box-sizing: border-box; */
+    border-style: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: .5rem;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    font-size: 16px;
+    transition: all .15s ease;
+}
+
+.tip-button-div button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip .tip-button-div .tip-button-click{
+    background-color: hsl(172, 67%, 45%);  /*for when we click on them*/
+    color: hsl(183, 100%, 15%);
+    display: inline-block;
+    margin:0;
+    font-weight: bold;
+    font-family: 'space mono', monospace;
+    /* box-sizing: border-box; */
+    border-style: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 16px;
+    transition: all .15s ease;
+}
+
+.custom_input{
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+/* **********************************people inputs section*********************************** */
+
+.no-of-peolpe .error-message{
+    color: crimson;
+    float: right;
+    visibility: hidden;
+}
+
+.people .no-of-peolpe .error-message-visible{
+    visibility: visible;
+}
+
+.people .people-input-div .input-error{  /*for when we make inputs here */
+    border: 2px solid crimson;
+}
+
+.people-input-div{
+    position: relative;
+    margin-top: .5rem;
+}
+.people .people-input-div .icon-person{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+/************************************* output section**************************************** */
+
+
+.outputs{
+    background-color: hsl(183, 100%, 15%);
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 5%;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+
+p{
+    margin: 0;
+}
+
+.tip-amount-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tip-amount-div .output-span{
+    /* color:hsl(184, 14%, 56%); */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin:0;
+    padding: 0;
+    color:hsl(186, 56%, 67%);
+    overflow:scroll;
+}
+.left{
+    color: hsl(0, 0%, 100%);
+
+}
+
+.right{
+    text-align: right;
+    width: 100%;
+}
+
+h6{
+    display: inline-block;    
+    margin:0;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.button-div{
+    margin: 4rem 0 2rem;
+}
+
+.button-div .reset-button{
+    display: block;
+    color:hsl(182, 60%, 81%);
+    background-color: hsl(186, 56%, 67%);
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: .6;
+    padding:.8rem 0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    transition: all .1s ease;
+}
+
+.button-div .reset-button:hover{
+    background-color: hsl(172, 67%, 80%);
+    color: hsl(183, 100%, 15%);
+    opacity: 1;
+}
+
+.attribution a:last-child{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/************************************* Responsive section******************************************** */
+
+
+@media (min-width: 1000px) {
+    .container{
+        display: flex; 
+        flex-direction: column;
+        padding: 0 14%;
+        min-height: 100vh;
+    }
+    
+    .cards{
+        display: flex;
+        padding:0;
+        box-sizing: border-box;
+        gap: 4%;
+        padding:2.5%;
+        border-radius: 1.5rem;
+    }
+
+    .tip .tip-button-div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .outputs{
+        margin: 0;
+        padding: 3%
+    }
+
+    .button-div{
+        margin: 16% 0 0;
+    }
+
+    .outputs .tip-amount-div:nth-child(2){
+        margin-top: 7%;
+    }
+}
